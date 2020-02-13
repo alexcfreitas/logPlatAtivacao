@@ -84,7 +84,7 @@ const processarRegistros = data => {
 				_.chain(prodSuplementar)
 					.map(suplementar =>
 						objectUtil.renameKeys(suplementar, {
-							identificadorProdutoCatalogo: 'identificadorProdutoCatalogo',
+							idProdutoCatalogo: 'identificadorProdutoCatalogo',
 							nomeProdutoCatalogo: 'nomeProdutoCatalogo',
 							dataNegociacao: 'dataNegociacao',
 							nomeUsuarioInclusao: 'nomeUsuarioInclusao',
@@ -105,11 +105,11 @@ const processarRegistros = data => {
 							dataIniVigencia: 'dataIniVigencia',
 							tipoParceiro: 'tipoParceiro',
 							valorDescontoPercTrans: 'valorDescontoPercTrans',
-							valorMinTransacaoAplicDesc: 'valorMinTransacaoAplicDesc',
+							vlrMinTransacaoAplicDesc: 'valorMinTransacaoAplicDesc',
 							identificadorVoucher: 'identificadorVoucher',
 							flagAtivo: 'flagAtivo',
-							quantidadeLitrosDispDesconto: 'quantidadeLitrosDispDesconto',
-							quantidadeSaldoLitrosDispDesc: 'quantidadeSaldoLitrosDispDesc',
+							qtdLitrosDispDesconto: 'quantidadeLitrosDispDesconto',
+							qtdSaldoLitrosDispDesc: 'quantidadeSaldoLitrosDispDesc',
 							dataAtualizacaoSaldo: 'dataAtualizacaoSaldo',
 							valorDescontoLitro: 'valorDescontoLitro',
 							valorSaldoDescontoFixo: 'valorSaldoDescontoFixo',
@@ -121,9 +121,9 @@ const processarRegistros = data => {
 							flagConsumo: 'flagConsumo',
 							dataFimVigencia: 'dataFimVigencia',
 							valorDescontoFixo: 'valorDescontoFixo',
-							quantidadeMinLitrosAplicDesc: 'quantidadeMinLitrosAplicDesc',
+							qtdMinLitrosAplicDesc: 'quantidadeMinLitrosAplicDesc',
 							codigoPlaca: 'codigoPlaca',
-							identificadorCampanhaVoucher: 'identificadorCampanhaVoucher',
+							idCampanhaVoucher: 'identificadorCampanhaVoucher',
 							flagPrioridade: 'flagPrioridade',
 							tipoProduto: 'tipoProduto'
 						})
@@ -150,7 +150,7 @@ const processarRegistros = data => {
                 'ranking.voucher.voucher.tipoParceiro',
 			rank_valorDescontoPercTrans:
                 'ranking.voucher.voucher.valorDescontoPercTrans',
-			rank_valorMinTransacaoAplicDesc:
+			rank_vlrMinTransacaoAplicDesc:
                 'ranking.voucher.voucher.valorMinTransacaoAplicDesc',
 			rank_flagConsumo:
                 'ranking.voucher.voucher.flagConsumo',
@@ -158,13 +158,13 @@ const processarRegistros = data => {
                 'ranking.voucher.voucher.dataFimVigencia',
 			rank_valorDescontoFixo:
                 'ranking.voucher.voucher.valorDescontoFixo',
-			rank_quantidadeMinLitrosAplicDesc:
+			rank_qtdMinLitrosAplicDesc:
                 'ranking.voucher.voucher.quantidadeMinLitrosAplicDesc',
 			rank_flagAtivo:
                 'ranking.voucher.voucher.flagAtivo',
 			rank_tipoVoucher:
                 'ranking.voucher.voucher.tipoVoucher',
-			rank_quantidadeSaldoLitrosDispDesc:
+			rank_qtdSaldoLitrosDispDesc:
                 'ranking.voucher.voucher.quantidadeSaldoLitrosDispDesc',
 			rank_placaVeiculo:
                 'ranking.voucher.voucher.placaVeiculo',
@@ -189,11 +189,11 @@ const processarRegistros = data => {
             sms_flagConsumo:'sms.voucher.flagConsumo',
             sms_dataFimVigencia:'sms.voucher.dataFimVigencia',
             sms_valorDescontoFixo:'sms.voucher.valorDescontoFixo',
-            sms_quantidadeMinLitrosAplicDesc:'sms.voucher.quantidadeMinLitrosAplicDesc',
+            sms_qtdMinLitrosAplicDesc:'sms.voucher.quantidadeMinLitrosAplicDesc',
             sms_flagAtivo:'sms.voucher.flagAtivo',
-            sms_quantidadeLitrosDispDesconto:'sms.voucher.quantidadeLitrosDispDesconto',
+            sms_qtdLitrosDispDesconto:'sms.voucher.quantidadeLitrosDispDesconto',
             sms_tipoVoucher:'sms.voucher.tipoVoucher',
-            sms_quantidadeSaldoLitrosDispDesc:'sms.voucher.quantidadeSaldoLitrosDispDesc',
+            sms_qtdSaldoLitrosDispDesc:'sms.voucher.quantidadeSaldoLitrosDispDesc',
             sms_placaVeiculo:'sms.voucher.placaVeiculo',
             sms_valorDescontoLitro:'sms.voucher.valorDescontoLitro',
             sms_flagPrioridade:'sms.voucher.flagPrioridade',
@@ -204,7 +204,7 @@ const processarRegistros = data => {
             sms_dataAtualizacaoSaldo:'sms.voucher.dataAtualizacaoSaldo',
             sms_numeroIdentificador:'sms.voucher.numeroIdentificador',
             sms_codigoPlaca:'sms.voucher.codigoPlaca',
-            sms_identificadorCampanhaVoucher:'sms.voucher.identificadorCampanhaVoucher',
+            sms_idCampanhaVoucher:'sms.voucher.identificadorCampanhaVoucher',
             sms_tipoProduto:'sms.voucher.sms_tipoProduto',
             sms_mensagem:'sms.mensagem',
             sms_status:'sms.status',
