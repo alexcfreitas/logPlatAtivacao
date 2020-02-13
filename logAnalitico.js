@@ -8,7 +8,7 @@ const url =
 const data = {
 	rangeData: {
 		dataHoraInicio: '01-01-2020T00:00:01',
-		dataHoraFim: '30-01-2020T23:59:59'
+		dataHoraFim: '13-02-2020T23:59:59'
 	}
 };
 
@@ -39,7 +39,9 @@ const processarRegistros = data => {
 			dataInclusao: 'dataInclusao',
 			promotor: 'promotor',
 			acao: 'acao',
-			idUsuario: 'idUsuario',
+            idUsuario: 'idUsuario',
+            geolocalizacao: 'geolocalizacao',
+            codigoEstabelecimento: 'codigoEstabelecimento',
 			tipoEstabelecimento: 'tipoEstabelecimento',
 			chave: 'chave',
 			placaVeiculo: 'placaVeiculo',
