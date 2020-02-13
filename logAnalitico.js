@@ -105,7 +105,7 @@ const processarRegistros = data => {
 							dataIniVigencia: 'dataIniVigencia',
 							tipoParceiro: 'tipoParceiro',
 							valorDescontoPercTrans: 'valorDescontoPercTrans',
-							vlrMinTransacaoAplicDesc: 'valorMinTransacaoAplicDesc',
+							vlrMinTransacAplicDesc: 'valorMinTransacaoAplicDesc',
 							identificadorVoucher: 'identificadorVoucher',
 							flagAtivo: 'flagAtivo',
 							qtdLitrosDispDesconto: 'quantidadeLitrosDispDesconto',

@@ -65,7 +65,7 @@ const fields = [
 	'clivouc.dataIniVigencia',
 	'clivouc.tipoParceiro',
 	'clivouc.valorDescontoPercTrans',
-	'clivouc.vlrMinTransacaoAplicDesc',
+	'clivouc.vlrMinTransacAplicDesc',
 	'clivouc.identificadorVoucher',
 	'clivouc.flagAtivo',
 	'clivouc.qtdLitrosDispDesconto',
