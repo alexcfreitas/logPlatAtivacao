@@ -10,7 +10,7 @@ const init = async () => {
 
 	const parser = new Parser({
 		fields: model.fields,
-		unwind: ['produtoSuplementar', 'produto', 'cliente_vouchers']
+		unwind: ['psup', 'prod', 'clivouc']
 	});
 
 	const csv = parser.parse(registros);

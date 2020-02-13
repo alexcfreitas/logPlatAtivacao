@@ -81,7 +81,7 @@ const processarRegistros = data => {
 			tipoFormaPagamento: 'oferta.conta.tipoFormaPagamento',
 			produtoHabilitado: 'oferta.plano.produtoHabilitado',
 			oferta_codigo: 'oferta.plano.codigo',
-			produtoSuplementar: () =>
+			psup: () =>
 				_.chain(prodSuplementar)
 					.map(suplementar =>
 						objectUtil.renameKeys(suplementar, {
@@ -97,9 +97,9 @@ const processarRegistros = data => {
 			dispositivosAtivos: 'oferta.plano.dispositivosAtivos',
 			flagAtivacaoOptIn: 'oferta.flagAtivacaoOptIn',
 			oferta_descricao: 'oferta.plano.descricao',
-			produto: 'oferta.elegivelAbastece.produto',
+			prod: 'oferta.elegivelAbastece.produto',
 			elegivel: 'oferta.elegivelAbastece.elegivel',
-			cliente_vouchers: () =>
+			clivouc: () =>
 				_.chain(clienteVouchers)
 					.map(voucher =>
 						objectUtil.renameKeys(voucher, {
@@ -137,16 +137,48 @@ const processarRegistros = data => {
 			telefone: 'cliente.cliente.telefone',
 			sexo: 'cliente.cliente.sexo',
 			ranking: 'ranking.ranking',
-			ranking_flagPossuiVoucher: 'ranking.flagPossuiVoucher',
-			perfilCliente: 'ranking.voucher.perfilCliente',
-			ranking_voucher_nomeVoucher: 'ranking.voucher.voucher.nomeVoucher',
-			ranking_voucher_flagUtilizacao: 'ranking.voucher.voucher.flagUtilizacao',
-			ranking_voucher_tipoCombustivel:
+			rank_flagPossuiVoucher: 'ranking.flagPossuiVoucher',
+			rank_perfilCliente: 'ranking.voucher.perfilCliente',
+			rank_nomeVoucher: 'ranking.voucher.voucher.nomeVoucher',
+			rank_flagUtilizacao: 'ranking.voucher.voucher.flagUtilizacao',
+			rank_tipoCombustivel:
 				'ranking.voucher.voucher.tipoCombustivel',
-			ranking_voucher_dataIniVigencia:
+			rank_dataIniVigencia:
 				'ranking.voucher.voucher.dataIniVigencia',
-			ranking_voucher_identificadorCampanha:
-				'ranking.voucher.voucher.identificadorCampanha'
+			rank_identificadorCampanha:
+                'ranking.voucher.voucher.identificadorCampanha',
+			rank_tipoParceiro:
+                'ranking.voucher.voucher.tipoParceiro',
+			rank_valorDescontoPercTrans:
+                'ranking.voucher.voucher.valorDescontoPercTrans',
+			rank_valorMinTransacaoAplicDesc:
+                'ranking.voucher.voucher.valorMinTransacaoAplicDesc',
+			rank_flagConsumo:
+                'ranking.voucher.voucher.flagConsumo',
+			rank_dataFimVigencia:
+                'ranking.voucher.voucher.dataFimVigencia',
+			rank_valorDescontoFixo:
+                'ranking.voucher.voucher.valorDescontoFixo',
+			rank_quantidadeMinLitrosAplicDesc:
+                'ranking.voucher.voucher.quantidadeMinLitrosAplicDesc',
+			rank_flagAtivo:
+                'ranking.voucher.voucher.flagAtivo',
+			rank_tipoVoucher:
+                'ranking.voucher.voucher.tipoVoucher',
+			rank_quantidadeSaldoLitrosDispDesc:
+                'ranking.voucher.voucher.quantidadeSaldoLitrosDispDesc',
+			rank_placaVeiculo:
+                'ranking.voucher.voucher.placaVeiculo',
+			rank_valorDescontoLitro:
+                'ranking.voucher.voucher.valorDescontoLitro',
+			rank_flagPrioridade:
+                'ranking.voucher.voucher.flagPrioridade',
+			rank_valorSaldoDescontoFixo:
+                'ranking.voucher.voucher.valorSaldoDescontoFixo',
+			rank_identificador:
+                'ranking.voucher.voucher.identificador',
+			rank_tipoDescontoVoucher:
+				'ranking.voucher.voucher.tipoDescontoVoucher',
 		});
 	});
 };
