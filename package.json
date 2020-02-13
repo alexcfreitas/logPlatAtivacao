@@ -1,0 +1,22 @@
+{
+  "name": "loganaliticoplataformaativacao",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "axios": "^0.19.2",
+    "json2csv": "^4.5.4",
+    "lodash": "^4.17.15"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://alexcfreitas@bitbucket.org/alexcfreitas/loganaliticoplataformaativacao.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "homepage": "https://bitbucket.org/alexcfreitas/loganaliticoplataformaativacao#readme"
+}
