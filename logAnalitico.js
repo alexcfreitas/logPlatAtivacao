@@ -6,9 +6,9 @@ const url =
 	'https://prod.apisemparar.com.br/abastece-ativacao/v1/cliente/listar';
 
 const data = {
-	rangeData: {
-		dataHoraInicio: '01-01-2020T00:00:01',
-		dataHoraFim: '13-02-2020T23:59:59'
+	rangeDataTTL: {
+		dataHoraInicio: '2020-04-01',
+		dataHoraFim: '2020-05-01'
 	}
 };
 
